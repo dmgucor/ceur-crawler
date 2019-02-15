@@ -75,9 +75,9 @@ public class Crawler {
 		doc.close();
 	}
 	
-	public void getPDF(String route) throws IOException {
-		URL url = new URL(route);
-		File file = new File("file.pdf");
+	public void getPDF(String ruta) throws IOException {
+		URL url = new URL(ruta);
+		File file = new File("archivo.pdf");
 		FileUtils.copyURLToFile(url, file);
 	}
 
